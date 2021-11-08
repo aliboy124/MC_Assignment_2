@@ -10,6 +10,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.SecondAssignment">
         <activity
+            android:name=".Exam"
+            android:exported="false" />
+        <activity
+            android:name=".Practice"
+            android:exported="false" />
+        <activity
+            android:name=".AppHome"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
