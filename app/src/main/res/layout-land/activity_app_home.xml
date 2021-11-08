@@ -10,7 +10,7 @@
         android:id="@+id/imageView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        app:srcCompat="@drawable/app_background"
+        app:srcCompat="@drawable/app_background_landscape"
         tools:layout_editor_absoluteX="128dp"
         tools:layout_editor_absoluteY="164dp" />
 
@@ -18,13 +18,14 @@
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="136dp"
         android:text="مخارج الهروف"
         android:textColor="@color/black"
         android:textSize="60sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.181" />
 
     <Button
         android:id="@+id/button5"
