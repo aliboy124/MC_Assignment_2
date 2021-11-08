@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Toast;
 
 public class Practice extends AppCompatActivity {
 
@@ -14,10 +15,11 @@ public class Practice extends AppCompatActivity {
         setContentView(R.layout.activity_practice);
     }
     public void go(View view){
-        String str = String.valueOf(view.getId());
+        // getResourceEntryName will return the string version of id
+        String str = getResources().getResourceEntryName(view.getId());
         str = "@drawable/"+str;
         Intent intent = new Intent(Practice.this,PracticePreview.class);
         intent.putExtra("image_name",str);
-        startActivity(intent);
+            startActivity(intent);
     }
 }

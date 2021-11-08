@@ -7,152 +7,143 @@
     tools:context=".Practice">
 
     <Button
-        android:id="@+id/tarfiyah"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="1dp"
-        android:layout_marginEnd="1dp"
-        android:backgroundTint="@color/design_default_color_secondary_variant"
-        android:onClick="go"
-        android:text="Makharij # 8, 9, 10"
-        app:cornerRadius="50dp"
-        app:layout_constraintBottom_toTopOf="@+id/nit_eeyah"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/shajariyah_hafiyah" />
-
-    <Button
         android:id="@+id/lisaviyah"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="1dp"
-        android:layout_marginEnd="1dp"
         android:backgroundTint="@color/design_default_color_secondary_variant"
         android:onClick="go"
         android:text="Makharij # 12"
         app:cornerRadius="50dp"
         app:layout_constraintBottom_toTopOf="@+id/makharij_13"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/nit_eeyah" />
+        app:layout_constraintStart_toEndOf="@+id/halqiyah"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/nit_eeyah"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="1dp"
-        android:layout_marginEnd="1dp"
+        android:layout_marginEnd="18dp"
         android:backgroundTint="@color/design_default_color_secondary_variant"
         android:onClick="go"
         android:text="Makharij # 11"
         app:cornerRadius="50dp"
-        app:layout_constraintBottom_toTopOf="@+id/lisaviyah"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/makharij_17"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tarfiyah" />
 
     <Button
-        android:id="@+id/makharij_13"
+        android:id="@+id/tarfiyah"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="1dp"
-        android:layout_marginEnd="1dp"
+        android:layout_marginEnd="18dp"
         android:backgroundTint="@color/design_default_color_secondary_variant"
         android:onClick="go"
-        android:text="Makharij # 13"
+        android:text="Makharij # 8, 9, 10"
         app:cornerRadius="50dp"
-        app:layout_constraintBottom_toTopOf="@+id/ghunna"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/nit_eeyah"
+        app:layout_constraintEnd_toStartOf="@+id/makharij_15_16"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/lisaviyah" />
-
-    <Button
-        android:id="@+id/makharij_15_16"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="1dp"
-        android:layout_marginEnd="1dp"
-        android:backgroundTint="@color/design_default_color_secondary_variant"
-        android:onClick="go"
-        android:text="Makharij # 15, 16 "
-        app:cornerRadius="50dp"
-        app:layout_constraintBottom_toTopOf="@+id/makharij_17"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ghunna" />
-
-    <Button
-        android:id="@+id/makharij_17"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="1dp"
-        android:layout_marginEnd="1dp"
-        android:backgroundTint="@color/design_default_color_secondary_variant"
-        android:onClick="go"
-        android:text="Makharij # 17"
-        app:cornerRadius="50dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/makharij_15_16" />
-
-    <Button
-        android:id="@+id/ghunna"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="1dp"
-        android:layout_marginEnd="1dp"
-        android:backgroundTint="@color/design_default_color_secondary_variant"
-        android:onClick="go"
-        android:text="Makharij #14"
-        app:cornerRadius="50dp"
-        app:layout_constraintBottom_toTopOf="@+id/makharij_15_16"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/makharij_13" />
+        app:layout_constraintTop_toBottomOf="@+id/shajariyah_hafiyah" />
 
     <Button
         android:id="@+id/halqiyah"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="1dp"
-        android:layout_marginEnd="1dp"
+        android:layout_marginEnd="18dp"
         android:backgroundTint="@color/design_default_color_secondary_variant"
         android:onClick="go"
         android:text="Makharij # 1, 2, 3"
         app:cornerRadius="50dp"
         app:layout_constraintBottom_toTopOf="@+id/lahatiyah"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/lisaviyah"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/shajariyah_hafiyah"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="1dp"
-        android:layout_marginEnd="1dp"
-        android:backgroundTint="@color/design_default_color_secondary_variant"
-        android:onClick="go"
-        android:text="Makharij # 6, 7"
-        app:cornerRadius="50dp"
-        app:layout_constraintBottom_toTopOf="@+id/tarfiyah"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/lahatiyah" />
 
     <Button
         android:id="@+id/lahatiyah"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="1dp"
-        android:layout_marginEnd="1dp"
+        android:layout_marginEnd="18dp"
         android:backgroundTint="@color/design_default_color_secondary_variant"
         android:onClick="go"
         android:text="Makharij # 4, 5"
         app:cornerRadius="50dp"
         app:layout_constraintBottom_toTopOf="@+id/shajariyah_hafiyah"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/makharij_13"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/halqiyah" />
+
+    <Button
+        android:id="@+id/shajariyah_hafiyah"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:layout_marginEnd="18dp"
+        android:backgroundTint="@color/design_default_color_secondary_variant"
+        android:onClick="go"
+        android:text="Makharij # 6, 7"
+        app:cornerRadius="50dp"
+        app:layout_constraintBottom_toTopOf="@+id/tarfiyah"
+        app:layout_constraintEnd_toStartOf="@+id/ghunna"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lahatiyah" />
+
+    <Button
+        android:id="@+id/makharij_13"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/design_default_color_secondary_variant"
+        android:onClick="go"
+        android:text="Makharij # 13"
+        app:cornerRadius="50dp"
+        app:layout_constraintBottom_toTopOf="@+id/ghunna"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/lahatiyah"
+        app:layout_constraintTop_toBottomOf="@+id/lisaviyah" />
+
+    <Button
+        android:id="@+id/makharij_15_16"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/design_default_color_secondary_variant"
+        android:onClick="go"
+        android:text="Makharij # 15, 16 "
+        app:cornerRadius="50dp"
+        app:layout_constraintBottom_toTopOf="@+id/makharij_17"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tarfiyah"
+        app:layout_constraintTop_toBottomOf="@+id/ghunna" />
+
+    <Button
+        android:id="@+id/makharij_17"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/design_default_color_secondary_variant"
+        android:onClick="go"
+        android:text="Makharij # 17"
+        app:cornerRadius="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/nit_eeyah"
+        app:layout_constraintTop_toBottomOf="@+id/makharij_15_16" />
+
+    <Button
+        android:id="@+id/ghunna"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/design_default_color_secondary_variant"
+        android:onClick="go"
+        android:text="Makharij #14"
+        app:cornerRadius="50dp"
+        app:layout_constraintBottom_toTopOf="@+id/makharij_15_16"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/shajariyah_hafiyah"
+        app:layout_constraintTop_toBottomOf="@+id/makharij_13" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
