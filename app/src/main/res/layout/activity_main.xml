@@ -66,7 +66,7 @@
         app:layout_constraintHorizontal_bias="0.491"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/switch1"
-        app:srcCompat="@drawable/github"
+        app:srcCompat="@drawable/commits"
         tools:visibility="visible" />
 
     <Switch

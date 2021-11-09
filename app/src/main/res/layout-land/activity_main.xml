@@ -67,7 +67,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/switch1"
         app:layout_constraintVertical_bias="0.079"
-        app:srcCompat="@drawable/github"
+        app:srcCompat="@drawable/commits"
         tools:visibility="visible" />
 
     <Switch
