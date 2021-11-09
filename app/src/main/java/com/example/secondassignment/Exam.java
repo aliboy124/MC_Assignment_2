@@ -2,6 +2,7 @@ package com.example.secondassignment;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -71,6 +72,19 @@ public class Exam extends AppCompatActivity {
             btn.setOnClickListener(new View.OnClickListener() {
                 @Override public void onClick(View v) {
 
+                    // using intent to implement share functionality
+
+                    Intent sharingIntent = new Intent(android.content.Intent.ACTION_SEND);
+                    sharingIntent.setType("text/plain");
+                    String shareBody = "I have scored:"+correctQuestions+" points out of 20!";
+                    sharingIntent.putExtra(android.content.Intent.EXTRA_SUBJECT, "Exam Result");
+                    sharingIntent.putExtra(android.content.Intent.EXTRA_TEXT, shareBody);
+
+                    // check if there is atleast one sharing app available
+
+                    if(sharingIntent.resolveActivity(getPackageManager()) != null){
+                        startActivity(Intent.createChooser(sharingIntent, "Share via"));
+                    }
                 }
             });
 
