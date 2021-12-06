@@ -6,6 +6,18 @@
     android:layout_height="match_parent"
     tools:context=".Practice">
 
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarPractice"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_green_light"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:title="Practice Page" />
+
     <Button
         android:id="@+id/lisaviyah"
         android:layout_width="0dp"
@@ -17,7 +29,7 @@
         app:layout_constraintBottom_toTopOf="@+id/makharij_13"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/halqiyah"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/toolbarPractice" />
 
     <Button
         android:id="@+id/nit_eeyah"
@@ -62,7 +74,7 @@
         app:layout_constraintBottom_toTopOf="@+id/lahatiyah"
         app:layout_constraintEnd_toStartOf="@+id/lisaviyah"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/toolbarPractice" />
 
     <Button
         android:id="@+id/lahatiyah"

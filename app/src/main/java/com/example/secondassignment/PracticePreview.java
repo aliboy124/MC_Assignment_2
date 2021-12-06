@@ -1,6 +1,7 @@
 package com.example.secondassignment;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 
 import android.content.Intent;
 import android.graphics.drawable.Drawable;
@@ -14,6 +15,10 @@ public class PracticePreview extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_practice_preview);
+
+        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbarPreview);
+        setSupportActionBar(toolbar);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         // This view exists merely to preview the images hence all code is in onCreate callback
         // We get the image name from intent Extra and then get the resource id and finally

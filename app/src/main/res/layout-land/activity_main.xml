@@ -6,39 +6,38 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/mainToolbar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_green_light"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:title="Main Page" />
+
     <ImageView
         android:id="@+id/imageView2"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_width="734dp"
+        android:layout_height="339dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/mainToolbar"
         app:srcCompat="@drawable/main_background_landscape"
-        tools:layout_editor_absoluteX="43dp"
-        tools:layout_editor_absoluteY="0dp" />
-
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="141dp"
-        android:layout_height="91dp"
-        android:layout_marginTop="16dp"
-        android:backgroundTint="@android:color/holo_green_light"
-        android:onClick="goToApp"
-        android:text="Proceed to App"
-        app:cornerRadius="50dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.845"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        tools:layout_editor_absoluteX="0dp" />
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="345dp"
         android:layout_height="37dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="8dp"
         android:fontFamily="sans-serif-medium"
         android:text="Muhammad Ali - BSEF18A524"
         android:textAlignment="center"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.139"
+        app:layout_constraintHorizontal_bias="0.124"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/imageView2" />
 

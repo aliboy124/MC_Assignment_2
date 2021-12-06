@@ -1,6 +1,7 @@
 package com.example.secondassignment;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -33,6 +34,10 @@ public class Exam extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_exam);
+
+        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbarExam);
+        setSupportActionBar(toolbar);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         letters.put("Throat",throat);
         letters.put("Tongue",tongue);
